@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(221 221 221);
+}
+
+main{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    margin: 100px auto;
+    border: 1px solid rgb(221 221 221);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+header{
+    height: auto;
+    border-bottom: 5px solid rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    border-left: 10px solid rgb(255, 21, 147);
+    color: rgb(255, 21, 147);
+}
+
+section{
+    height: auto;
+    background-color: rgb(244, 244, 244);
+    padding: 1px;
+}
+
+.bucket{
+    background-image: url('./closeeyeGhost.jpg');
+    background-size: 60px;
+    background-color: rgb(238, 238, 238);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 15px;
+    margin: 25px;
+    border-radius: 10px;
+    color: rgb(115, 115, 115);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bucket:hover{
+    background-image: url('./Ghost.jpg');
+    background-size: 60px;
+    background-color: rgb(238, 238, 238);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 5px solid rgb(28, 144, 255);
+    color:rgb(28, 144, 255);
+}
