@@ -1,0 +1,50 @@
+h1, blockquote{
+    margin: 0;
+    padding: 0;
+}
+
+caption{
+    width: 800px;
+}
+
+.sun{
+    color: red;
+}
+
+.tablecaption{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.year{
+    color: rgb(172, 31, 31);
+    font-size: 10em;
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.quote{
+    color: rgb(233 233 233);
+    font-size: 1.5em;
+}
+
+table{
+    margin: 20px auto;
+}
+
+th, td{
+    width: 32px;
+    text-align: initial;
+    font-size: 12px;
+}   
+
+.sat{
+    width: 64px;
+}
+
+.month > th{
+    text-align: center;
+    font-size: 32px;
+}
