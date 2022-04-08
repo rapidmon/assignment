@@ -52,10 +52,6 @@ section{
 
 .bucket:hover{
     background-image: url('./Ghost.jpg');
-    background-size: 60px;
-    background-color: rgb(238, 238, 238);
-    background-repeat: no-repeat;
-    background-position: right center;
     border: 5px solid rgb(28, 144, 255);
     color:rgb(28, 144, 255);
 }
