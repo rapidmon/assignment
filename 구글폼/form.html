@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>설문조사</title>
+</head>
+<body>
+    <header>
+        <h1>나와 잘 맞는 회사는?</h1>
+        <p>가고싶은 회사에 대한 호감도를 조사합니다. <span onClick="alert('아이고!')" style="font-weight: 900;">아이고 의미 없다.</span></p>
+    </header>
+    <section class="surbey word">
+        <p style="font-weight: 600;">다음 문자 중에 왠지 마음에 드는 것을 하나 고르세요.</p>
+        <label for="네" class="wordlabel">
+            <input class="rad" id="네" name="company" type="radio" value="네">
+            네
+        </label>
+        <label for="카" class="wordlabel">
+            <input class="rad" id="카" name="company" type="radio" value="카">
+            카
+        </label>
+        <label for="쿠" class="wordlabel">
+            <input class="rad" id="쿠" name="company" type="radio" value="쿠">
+            쿠
+        </label>
+        <label for="라" class="wordlabel">
+            <input class="rad" id="라" name="company" type="radio" value="라">
+            라
+        </label>
+        <label for="제" class="wordlabel">
+            <input class="rad" id="제" name="company" type="radio" value="제">
+            제
+        </label>
+    </section>
+    <section class="surbey messenger">
+        <p style="font-weight: 600;">친구와 문자를 할 때 어떤 메신저를 이용하십니까? 모두 골라주세요.</p>
+        <label for="카카오톡" class="checklabel">
+            <input class="checkbox" id="카카오톡" type="checkbox" name="message" value="카카오톡">
+            카카오톡
+        </label>
+        <label for="라인" class="checklabel">
+            <input class="checkbox" id="라인" type="checkbox" name="message" value="라인">
+            라인
+        </label>
+        <label for="인스타그램디엠" class="checklabel">
+            <input class="checkbox" id="인스타그램디엠" type="checkbox" name="message" value="인스타그램디엠">
+            인스타그램 디엠
+        </label>
+        <label for="네이트온" class="checklabel">
+            <input class="checkbox" id="네이트온" type="checkbox" name="message" value="네이트온">
+            네이트온
+        </label>
+        <label for="버디버디" class="checklabel">
+            <input class="checkbox" id="버디버디" type="checkbox" name="message" value="버디버디">
+            버디버디
+        </label>
+    </section>
+    <section class="surbey sentence">
+        <label for="txt" style="font-weight: 600;">면접에서 자신의 포부를 한 문장으로 얘기한다면?</label>
+        <input class="text" id="txt" type="text" placeholder="내 답변" maxlength="26">
+    </section>
+    <section class="surbey before">
+        <label for="longtxt" style="font-weight: 600;">당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해주고 싶은 말은?</label>
+        <input class="longtext" id="longtxt" type="text" placeholder="내 답변">
+    </section>
+    <section class="surbey choice">
+        <label for="question" style="font-weight: 600;">다음 중 기술 면접 때 듣고 싶은 질문이 아닌 것은?</label>
+        <input class="choices" type="text" list="questions" name="questions" id="question" placeholder="선택">
+        <datalist id="questions">
+            <option value="회사에 바라는 점 있어요?">회사에 바라는 점 있어요?</option>
+            <option value="할 수 있겠어요?">할 수 있겠어요?</option>
+            <option value="버틸 수 있죠?">버틸 수 있죠?</option>
+            <option value="지금 이 자리에서 보여줄 수 있어요?">지금 이 자리에서 보여줄 수 있어요?</option>
+        </datalist>
+    </section>
+    <section class="surbey job">
+        <label for="date" style="font-weight: 600;">취업을 희망하는 날짜를 선택해주세요</label>
+        <label for="date" class="small">날짜</label>
+        <input type="date" id="date" class="day" max="9999-12-31" min="0001-01-01">
+    </section>
+    <section class="surbey start">
+        <label for="time" style="font-weight: 600;">업무를 시작하기에 가장 적당한 시간을 고르세요</label>
+        <fieldset class="timebox">
+            <legend class="timep">시간</legend>
+            <input class="hour" type="number" max="12"> : <input class="hour" type="number" max="59">
+            <select class="night" id="time">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </fieldset>
+    </section>
+    <footer class="foot">
+        <button class="sub">제출</button>
+        <a onClick="window.location.reload()" class="reload">양식 지우기</a>
+    </footer>
+</body>
+</html>

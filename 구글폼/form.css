@@ -1,0 +1,281 @@
+/* css reset */
+
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* css style */
+body{
+    background-color: rgb(237 232 246);
+}
+
+/* header style */
+
+header::before{
+    content: "";
+    display: block;
+    background-color: rgb(89 47 171);
+    height: auto;
+    padding: 5px;
+    position: relative;
+    top: -15px;
+    left: -30px;
+    width: 650px;
+}
+
+header {
+    border: 1px solid rgb(203 203 203);
+    border-radius: 10px;
+    height: auto;
+    width: 600px;
+    margin: 30px auto;
+    padding: 15px 30px 30px 30px;
+    background-color: white;
+    overflow: hidden;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+header::after{
+    content: "jejucodingbasecamp@gmail.com (공유되지 않음) 계정 전환";
+    text-indent: 4em;
+    display: block;
+    position: relative;
+    width: 680px;
+    left: -30px;
+    top: 15px;
+    border-top: 1px solid rgb(203 203 203);
+    padding: 12px 12px 8px 12px;
+    background-image: url(./visibility_off.png), url(./check_cloud.png);
+    background-size: 4% auto, 3% auto;
+    background-repeat: no-repeat;
+    background-position: left 30px top 12px, left 600px top 14px;
+    filter: opacity(0.7);
+}
+
+/* section style */
+
+.surbey{
+    height: auto;
+    border: 1px solid rgb(203 203 203);
+    border-radius: 10px;
+    width: 600px;
+    padding: 30px;
+    margin: 30px auto;
+    background-color: white;
+}
+
+/* radio style */
+
+.word{
+    display: flex;
+    flex-direction: column;
+}
+
+.word > p{
+    margin-bottom: 10px;
+}
+
+.wordlabel{
+    margin: 20px 20px 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.rad{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+}
+
+/* checkbox style */
+
+.messenger{
+    display: flex;
+    flex-direction: column;
+}
+
+.messenger > p{
+    margin-bottom: 10px;
+}
+
+.checklabel{
+    margin: 12px 20px 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0);
+    border-radius: 0;
+}
+
+/* sentence style */
+
+.sentence{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    border: 0;
+    border-bottom: 1px solid rgb(203 203 203);
+    margin: 40px 0 20px 0;
+    width: 26em;
+}
+
+.text:focus{
+    outline: none;
+}
+
+/* longsentence style */
+
+.before{
+    display: flex;
+    flex-direction: column;
+}
+
+.longtext{
+    border: 0;
+    border-bottom: 1px solid rgb(203 203 203);
+    margin: 40px 0 20px 0;
+}
+
+.longtext:focus{
+    outline: none;
+}
+
+/* choice style */
+
+.choice{
+    display: flex;
+    flex-direction: column;
+}
+
+.choices{
+    margin: 40px 0 20px 0;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid rgb(203 203 203);
+    border-radius: 5px;
+}
+
+.choices:focus{
+    border-color: rgb(117, 117, 117);
+}
+
+/* date style */
+
+.job{
+    display: flex;
+    flex-direction: column;
+}
+
+.small{
+    margin: 20px 0 20px 0;
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+}
+
+.day{
+    width:150px;
+    border: 0;
+    border-bottom: 1px solid rgb(203 203 203);
+    font-size: 15px;
+}
+
+/* time style */
+
+.start{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timebox{
+    border: 0;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.timep{
+    padding: 0;
+    margin: 20px 0 20px 0;
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+}
+
+.hour{
+    border: 0;
+    border-bottom: 1px solid rgb(203 203 203);
+    width: 5em;
+}
+
+.hour:focus{
+    outline: none;
+}
+
+.hour::-webkit-outer-spin-button, .hour::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.night{
+    border: 0;
+    padding: 5px;
+}
+
+.night:focus{
+    outline: none;
+}
+
+/* foot style */
+
+.foot{
+    width: 660px;
+    padding: 0 0 8px 0;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub{
+    background-color: rgb(89 47 171);
+    color: white;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.sub:hover{
+    cursor: pointer;
+}
+
+.reload{
+    color: rgb(89 47 171);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reload:hover{
+    cursor: pointer;
+}
