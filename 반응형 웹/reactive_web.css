@@ -1,0 +1,224 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-shape-divider-top-1650520145 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.box{
+    margin: 240px 52px 240px 52px;
+}
+
+.title::before{
+    content: "위니브에서";
+    display: block;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 88px;
+    color: #121314;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 70px;
+    color: #121314;
+    line-height: 88px;
+}
+
+.company{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #47494D;
+}
+
+.explain{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #47494D;
+}
+
+.link{
+    width: 486px;
+    border-radius: 20px;
+    height: 280px;
+    padding: 40px 0 0 40px;
+}
+
+.link::after{
+    display: block;
+    content: "바로가기";
+    background: url(./image/icon-_.png) no-repeat;
+    background-position: 70px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 152px 0 0 333px;
+}
+
+.content{
+    background: url(./image/Rectangle\ 2.png);
+    margin-bottom: 20px;
+    background-size: contain;
+}
+
+.book{
+    background: url(./image/Rectangle\ 3.png);
+    background-size: contain;
+}
+
+.little_title{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    line-height: 38px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 501px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box{
+        margin: 100px 0 0 30px;
+    }
+
+    .link{
+        float: left;
+        width: 344px;
+        border-radius: 20px;
+        height: 198px;
+        padding: 30px 0 0 30px;
+        margin-right: 20px;
+    }
+
+    .little_title{
+        font-weight: 700;
+        font-size: 24px;
+        color: white;
+        line-height: 30px;
+    }
+    
+    .link::after{
+        display: block;
+        content: "바로가기";
+        background: url(./image/icon-_.png) no-repeat;
+        background-position: 70px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin: 98px 0 0 211px;
+    }
+
+    .second{
+        display: flex;
+        margin-top: 60px;
+    }
+
+    .company{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #47494D;
+    }
+    
+    .explain{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #47494D;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box{
+        margin: 100px 0 0 16px;
+    }   
+
+    .title::before{
+        content: "위니브에서";
+        display: block;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        color: #121314;
+    }
+    
+    .title{
+        font-weight: 700;
+        font-size: 36px;
+        color: #121314;
+        line-height: 45px;
+    }
+
+    .company{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #47494D;
+    }
+    
+    .explain{
+        margin-top: 14px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #47494D;
+    }
+
+    .link{
+        width: 356px;
+        border-radius: 20px;
+        height: 205px;
+        padding: 30px 0 0 30px;
+    }
+
+    .little_title{
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        line-height: 25px;
+    }
+
+    .link::after{
+        display: block;
+        content: "바로가기";
+        background: url(./image/icon-_.png) no-repeat;
+        background-position: 60px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin: 112px 0 0 234px;
+    }
+
+    .second{
+        margin-top: 40px;
+    }
+}
