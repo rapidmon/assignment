@@ -1,3 +1,33 @@
 .header{
-    
+    z-index: -20;
+    width: 100%;
+    padding-top: 25%;
+    background-image: url(./images/cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.title{
+    z-index: 10;
+    display: block;
+    position: relative;
+    font-size: 2rem;
+    margin-top: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.title::after{
+    z-index: -10;
+    position: absolute;
+    top: 1rem;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+    width: 280px;
+    border: 2px solid #235196;
+    border-radius: 5px;
 }
