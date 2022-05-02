@@ -31,13 +31,13 @@
 
 2. 캐릭터에 손을 가져다 대면 캐릭터가 움직입니다.
 
-    <img src="./screenshot/monster_hover.png" alt="my_resume img"></img>
+    <img src="./screenshot/monster_hover.png" alt="monster hover img"></img>
 
 3. 버킷리스트입니다. 각 항목에 마우스를 가져다 대면 유령이 눈을 뜹니다.
 
-    <img src="./screenshot/hover.png" alt="my_resume img"></img>
+    <img src="./screenshot/hover.png" alt="list hover img"></img>
 
 7. 미디어 쿼리를 이용해 만든 반응형 웹입니다. 패드일 때와 모바일일때를 구분하여 설정했습니다.
 
-    <img src="./screenshot/reactive_pad.png" alt="my_resume img"></img>
-    <img src="./screenshot/reactive_mobile.png" alt="my_resume img"></img>
+    <img src="./screenshot/reactive_pad.png" alt="reactive pad img"></img>
+    <img src="./screenshot/reactive_mobile.png" alt="reactive mobile img"></img>
