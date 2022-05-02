@@ -3,13 +3,21 @@
 ## Homepage
 
 1. <img src="./screenshot/main.png" alt="homepage img"></img>
+
 2. <img src="./screenshot/bread_bagmonster.png" alt="monster page img"></img>
+
 3. <img src="./screenshot/bucket_list.png" alt="bucketlist page img"></img>
+
 4. <img src="./screenshot/calendar.png" alt="calendar img"></img>
+
 5. <img src="./screenshot/Google_form.png" alt="Google form img"></img>
+
 6. <img src="./screenshot/my_profile.png" alt="my profile img"></img>
+
 7. <img src="./screenshot/reactive.png" alt="reactive img"></img>
+
 8. <img src="./screenshot/resume.png" alt="resume img"></img>
+
 9. <img src="./screenshot/my_resume.png" alt="my_resume img"></img>
 
 ## Repository Description
@@ -40,4 +48,4 @@
 7. 미디어 쿼리를 이용해 만든 반응형 웹입니다. 패드일 때와 모바일일때를 구분하여 설정했습니다.
 
     <img src="./screenshot/reactive_pad.png" alt="reactive pad img"></img>
-    <img src="./screenshot/reactive_mobile.png" alt="reactive mobile img"></img>
+    <img src="./screenshot/reacitve_mobile.png" alt="reactive mobile img"></img>
