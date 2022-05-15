@@ -1,0 +1,172 @@
+.upload{
+    width: 185px;
+    background-color: #2F80ED;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 10px;
+    padding: 14px 0;
+    margin: 80px 0 260px 150px;
+}
+
+.carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 150px;
+}
+
+.move{
+    width: 140px;
+    color: #828282;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    border: 3px solid #828282;
+    border-radius: 36.5px;
+    padding: 16px 0;
+    background-color: white;
+}
+
+.card{
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card:nth-child(2){
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./ggorisuniroch.webp);
+    background-color: #FFE694;
+    position: absolute;
+    left: 130px;
+    transform: perspective(800px) rotateY(-80deg);
+    z-index: 100;
+}
+
+.card:nth-child(2):before{
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
+    position: absolute;
+    content: "";
+    z-index: -100;
+    width: 180px;
+    height: 180px;
+    /* background-color: white; */
+}
+
+.card:nth-child(2):after{
+    content: "";
+    position: absolute;
+    top: 220px;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./ggorisuniroch.webp);
+    background-color: #FFE694;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.card:nth-child(3){
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./ggorisun.webp);
+    background-color: #B38877;
+    position: absolute;
+    left: 180px;
+    z-index: 200;
+    transform: perspective(400px) rotateY(-40deg);
+}
+
+.card:nth-child(3):after{
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./ggorisun.webp);
+    background-color: #B38877;
+    content: "";
+    position: absolute;
+    top: 290px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.card:nth-child(4){
+    width: 310px;
+    height: 310px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(./daggoriggorisun.png);
+    background-color: #E9DBC1;
+    z-index: 300;
+}
+
+.card:nth-child(4):after{
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./daggoriggorisun.png);
+    background-color: #E9DBC1;
+    content: "";
+    position: absolute;
+    top: 350px;
+    width: 310px;
+    height: 310px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.card:nth-child(5){
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./daggori.webp);
+    background-color: #F9DCBA;
+    position: absolute;
+    right: 180px;
+    z-index: 200;
+    transform: perspective(400px) rotateY(40deg);
+}
+
+.card:nth-child(5):after{
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./daggori.webp);
+    background-color: #F9DCBA;
+    content: "";
+    position: absolute;
+    top: 290px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.card:nth-child(6){
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./daggori1.png);
+    background-color:  rgba(233, 96, 140);
+    position: absolute;
+    right: 130px;
+    transform: perspective(800px) rotateY(80deg);
+}
+
+.card:nth-child(6):after{
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./daggori1.png);
+    background-color:  rgba(233, 96, 140);
+    content: "";
+    position: absolute;
+    top: 220px;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
