@@ -1,4 +1,6 @@
 .upload{
+    display: block;
+    text-align: center;
     width: 185px;
     background-color: #2F80ED;
     border: none;
@@ -185,6 +187,7 @@
     height: inherit;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./daggori1.png);
     background-color:  rgba(233, 96, 140);
+    z-index: -100;
 }
 
 .card:nth-child(6):after{
