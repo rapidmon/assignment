@@ -21,6 +21,7 @@ const $right = document.querySelector(".right")
 //prev버튼
 $left.addEventListener("click", function(){
     $carousel.childNodes[1].style.transitionDuration = '500ms';
+    $carousel.childNodes[1].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("background-image").split('url')[1]}`;
     $carousel.childNodes[1].style.left = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("left")}`;
     $carousel.childNodes[1].style.transform = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("transform")}`;
     $carousel.childNodes[1].style.width = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("width")}`;
@@ -34,12 +35,15 @@ $left.addEventListener("click", function(){
         $carousel.childNodes[i].style.left = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("left")}`;
         $carousel.childNodes[i].style.transform = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("transform")}`;
         $carousel.childNodes[i].style.zIndex = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("z-index")}`;
+        $carousel.childNodes[i].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[i]).getPropertyValue("background-image").split('url')[1]}`;
     }
 })
+
 
 //next버튼
 $right.addEventListener("click", function(){
     $carousel.childNodes[5].style.transitionDuration = '500ms';
+    $carousel.childNodes[5].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("background-image").split('url')[1]}`;
     $carousel.childNodes[5].style.left = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("left")}`;
     $carousel.childNodes[5].style.transform = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("transform")}`;
     $carousel.childNodes[5].style.width = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("width")}`;
@@ -52,6 +56,7 @@ $right.addEventListener("click", function(){
         $carousel.childNodes[i].style.left = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("left")}`;
         $carousel.childNodes[i].style.transform = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("transform")}`;
         $carousel.childNodes[i].style.zIndex = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("z-index")}`;
+        $carousel.childNodes[i].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[i]).getPropertyValue("background-image").split('url')[1]}`;
     }
 })
 

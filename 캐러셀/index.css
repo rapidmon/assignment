@@ -19,6 +19,7 @@
     align-items: center;
     position: relative;
     margin: 0 150px;
+    z-index: 500;
 }
 
 .move{
@@ -33,7 +34,7 @@
     background-color: white;
 }
 
-.card:before{
+.card{
     border-radius: 10px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -46,14 +47,7 @@
     z-index: 100;
     left: 130px;
     transform: perspective(800px) rotateY(-80deg);
-}
-
-.card:nth-child(2):before{
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
-    position: absolute;
-    content: "";
-    width: inherit;
-    height: inherit;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./ggorisuniroch.webp);
     background-color: #FFE694;
 }
@@ -79,16 +73,9 @@
     left: 180px;
     z-index: 200;
     transform: perspective(400px) rotateY(-40deg);
-}
-
-.card:nth-child(3):before{
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
-    position: absolute;
-    content: "";
-    width: inherit;
-    height: inherit;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./ggorisun.webp);
     background-color: #B38877;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card:nth-child(3):after{
@@ -111,15 +98,8 @@
     position: absolute;
     left: 370px;
     z-index: 300;
-}
-
-.card:nth-child(4):before{
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
-    position: absolute;
-    content: "";
-    width: inherit;
-    height: inherit;
-    background-image: url(./daggoriggorisun.png);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./daggoriggorisun.png);
     background-color: #E9DBC1;
 }
 
@@ -144,16 +124,9 @@
     left: 619px;
     z-index: 200;
     transform: perspective(400px) rotateY(40deg);
-}
-
-.card:nth-child(5):before{
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
-    position: absolute;
-    content: "";
-    width: inherit;
-    height: inherit;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./daggori.webp);
     background-color: #F9DCBA;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card:nth-child(5):after{
@@ -177,17 +150,9 @@
     left: 739px;
     z-index: 100;
     transform: perspective(800px) rotateY(80deg);
-}
-
-.card:nth-child(6):before{
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
-    position: absolute;
-    content: "";
-    width: inherit;
-    height: inherit;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./daggori1.png);
     background-color:  rgba(233, 96, 140);
-    z-index: -100;
 }
 
 .card:nth-child(6):after{
