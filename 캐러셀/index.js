@@ -28,7 +28,6 @@ $left.addEventListener("click", function(){
     $carousel.childNodes[1].style.height = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("height")}`;
     $carousel.childNodes[1].style.zIndex = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("z-index")}`;
     for(let i=5; i>1; i--){
-        // console.dir(document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("transform"))
         $carousel.childNodes[i].style.transitionDuration = '500ms';
         $carousel.childNodes[i].style.width = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("width")}`;
         $carousel.childNodes[i].style.height = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("height")}`;
@@ -39,7 +38,6 @@ $left.addEventListener("click", function(){
     }
 })
 
-
 //next버튼
 $right.addEventListener("click", function(){
     $carousel.childNodes[5].style.transitionDuration = '500ms';
@@ -49,7 +47,7 @@ $right.addEventListener("click", function(){
     $carousel.childNodes[5].style.width = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("width")}`;
     $carousel.childNodes[5].style.height = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("height")}`;
     $carousel.childNodes[5].style.zIndex = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("z-index")}`;
-    for(let i=4; i>0; i--){
+    for(let i=1; i<5; i++){
         $carousel.childNodes[i].style.transitionDuration = '500ms';
         $carousel.childNodes[i].style.width = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("width")}`;
         $carousel.childNodes[i].style.height = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("height")}`;
