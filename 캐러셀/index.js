@@ -20,6 +20,7 @@ const $right = document.querySelector(".right")
 
 //prev버튼
 $left.addEventListener("click", function(){
+    let $1_backgroundimage = document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("background-image");
     $carousel.childNodes[1].style.transitionDuration = '500ms';
     $carousel.childNodes[1].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("background-image").split('url')[1]}`;
     $carousel.childNodes[1].style.left = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("left")}`;
@@ -36,10 +37,12 @@ $left.addEventListener("click", function(){
         $carousel.childNodes[i].style.zIndex = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("z-index")}`;
         $carousel.childNodes[i].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[i]).getPropertyValue("background-image").split('url')[1]}`;
     }
+    $carousel.childNodes[2].style.backgroundImage = `${$1_backgroundimage.split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[2]).getPropertyValue("background-image").split('url')[1]}`;
 })
 
 //next버튼
 $right.addEventListener("click", function(){
+    let $5_backgroundimage = document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("background-image");
     $carousel.childNodes[5].style.transitionDuration = '500ms';
     $carousel.childNodes[5].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("background-image").split('url')[1]}`;
     $carousel.childNodes[5].style.left = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("left")}`;
@@ -56,5 +59,6 @@ $right.addEventListener("click", function(){
         $carousel.childNodes[i].style.zIndex = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("z-index")}`;
         $carousel.childNodes[i].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[i]).getPropertyValue("background-image").split('url')[1]}`;
     }
+    $carousel.childNodes[4].style.backgroundImage = `${$5_backgroundimage.split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[4]).getPropertyValue("background-image").split('url')[1]}`;
 })
 
