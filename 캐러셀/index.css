@@ -1,4 +1,4 @@
-.upload{
+/* .upload{
     display: block;
     text-align: center;
     width: 185px;
@@ -11,14 +11,15 @@
     border-radius: 10px;
     padding: 14px 0;
     margin: 80px 0 260px 150px;
-}
+} */
 
 .carousel{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 0 150px;
+    margin: 300px 150px;
     z-index: 500;
 }
 

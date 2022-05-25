@@ -1,0 +1,41 @@
+.upload{
+    display: block;
+    text-align: center;
+    width: 185px;
+    background-color: #2F80ED;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 10px;
+    padding: 14px 0;
+    margin: 80px 0 260px 150px;
+}
+
+.carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 150px;
+    z-index: 500;
+}
+
+.move{
+    width: 140px;
+    color: #828282;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    border: 3px solid #828282;
+    border-radius: 36.5px;
+    padding: 16px 0;
+    background-color: white;
+}
+
+.card{
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

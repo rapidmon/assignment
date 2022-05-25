@@ -1,8 +1,8 @@
 //ul, button 생성
 const body = document.querySelector("body")
 body.insertAdjacentHTML("afterbegin", `<ul class="carousel"></ul>`)
-body.insertAdjacentHTML("afterbegin", `<input type="file" class="hidden" id="file_upload" accept="image/*">`)
-body.insertAdjacentHTML("afterbegin", `<label type="file" class="upload" for="file_upload">이미지 업로드</label>`)
+// body.insertAdjacentHTML("afterbegin", `<input type="file" class="hidden" id="file_upload" accept="image/*">`)
+// body.insertAdjacentHTML("afterbegin", `<label type="file" class="upload" for="file_upload">이미지 업로드</label>`)
 
 //li 생성
 const $carousel = document.querySelector(".carousel")
@@ -18,8 +18,17 @@ $carousel.insertAdjacentHTML("beforeend", `<li class="btn"><button class="move r
 const $left = document.querySelector(".left")
 const $right = document.querySelector(".right")
 
+//버튼 클릭 시 이벤트가 끝날 때까지 버튼 잠금
+const test2 = (e) => {
+    e.target.disabled = true;
+
+    setTimeout(() => {
+        e.target.disabled = false;
+    }, 500)
+}
+
 //prev버튼
-$left.addEventListener("click", function(){
+$left.addEventListener("click", function(e){
     let $1_backgroundimage = document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("background-image");
     $carousel.childNodes[1].style.transitionDuration = '500ms';
     $carousel.childNodes[1].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("background-image").split('url')[1]}`;
@@ -38,10 +47,11 @@ $left.addEventListener("click", function(){
         $carousel.childNodes[i].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[i-1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[i]).getPropertyValue("background-image").split('url')[1]}`;
     }
     $carousel.childNodes[2].style.backgroundImage = `${$1_backgroundimage.split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[2]).getPropertyValue("background-image").split('url')[1]}`;
+    test2(e);
 })
 
 //next버튼
-$right.addEventListener("click", function(){
+$right.addEventListener("click", function(e){
     let $5_backgroundimage = document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("background-image");
     $carousel.childNodes[5].style.transitionDuration = '500ms';
     $carousel.childNodes[5].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[5]).getPropertyValue("background-image").split('url')[1]}`;
@@ -60,5 +70,6 @@ $right.addEventListener("click", function(){
         $carousel.childNodes[i].style.backgroundImage = `${document.defaultView.getComputedStyle($carousel.childNodes[i+1]).getPropertyValue("background-image").split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[i]).getPropertyValue("background-image").split('url')[1]}`;
     }
     $carousel.childNodes[4].style.backgroundImage = `${$5_backgroundimage.split('url')[0]} url${document.defaultView.getComputedStyle($carousel.childNodes[4]).getPropertyValue("background-image").split('url')[1]}`;
+    test2(e)
 })
 
