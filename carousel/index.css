@@ -1,3 +1,12 @@
+:root {
+    --item-number: 6;
+    --translateZ: calc(200px * (var(--item-number))/2/3.14)
+}
+
+body{
+    counter-reset: section;
+}
+
 .upload{
     display: block;
     text-align: center;
@@ -10,7 +19,15 @@
     line-height: 26px;
     border-radius: 10px;
     padding: 14px 0;
-    margin: 80px 0 260px 150px;
+    margin: 80px 0 100px 150px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 150px;
+    perspective: 1600px;
 }
 
 .carousel{
@@ -20,6 +37,9 @@
     position: relative;
     margin: 0 150px;
     z-index: 500;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transform: rotateY(60);
 }
 
 .move{
@@ -37,5 +57,129 @@
 .card{
     border-radius: 10px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.card:nth-child(1){
+    transform: rotateY(0deg) translateZ(var(--translateZ));
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./image/박재찬\ 미쳤어.jpg);
+}
+
+.card:nth-child(1):after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 40px);
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./image/박재찬\ 미쳤어.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+.card:nth-child(2){
+    counter-increment: section;
+    position: absolute;
+    transform: rotateY(calc(360deg/var(--item-number))) translateZ(var(--translateZ));
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./image/박재찬\ 빅이슈.jpg);
+}
+
+.card:nth-child(2):after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 40px);
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./image/박재찬\ 빅이슈.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+.card:nth-child(3){
+    counter-increment: section;
+    position: absolute;
+    transform: rotateY(calc(360deg/var(--item-number)*2)) translateZ(var(--translateZ));
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./image/박재찬\ 빅이슈\ 2.jpg);
+}
+
+.card:nth-child(3):after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 40px);
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./image/박재찬\ 빅이슈\ 2.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+.card:nth-child(4){
+    counter-increment: section;
+    position: absolute;
+    transform: rotateY(calc(360deg/var(--item-number)*3)) translateZ(var(--translateZ));
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./image/박재찬\ 한복.jpg);
+}
+
+.card:nth-child(4):after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 40px);
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./image/박재찬\ 한복.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+.card:nth-child(5){
+    counter-increment: section;
+    position: absolute;
+    transform: rotateY(calc(360deg/var(--item-number)*4)) translateZ(var(--translateZ));
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./image/프사.jpg);
+}
+
+.card:nth-child(5):after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 40px);
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./image/프사.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+.card:nth-child(6){
+    counter-increment: section;
+    position: absolute;
+    transform: rotateY(calc(360deg/var(--item-number)*5)) translateZ(var(--translateZ));
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./image/후드는\ 누가\ 이렇게\ 쓰래.jpg);
+}
+
+.card:nth-child(6):after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 40px);
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0.71) 100%), url(./image/후드는\ 누가\ 이렇게\ 쓰래.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
 }
